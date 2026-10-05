@@ -1,42 +1,95 @@
-Getting It Together ♡
-A CALMER, HAPPIER, STRONGER ME
-
-
-
-Today's Path
-
-◷ The Switch · 4:00 PM
-Your brain knows what usually happens now. We're changing the ending.
-I'M HEADING TO MY WORKOUT →I want a drink. Help me through this. →
-✝ Spirit
-Today's Scripture
-
-
-Open reflection →
-📚 Mind
-Your book is separate from Bible study. Read because you enjoy learning or disappearing into a good book.
-Log reading →
-🍽 Meal Plan
-
-Sunday + Wednesday prep
-🪷 Self-Care
-
-Give me another idea
-🏋️ Movement
-
-Listen to your recovery too
-Weekly Progress
-We measure accumulation, not perfection.
-
-🌱 I'm Becoming…
-Save this thought
-⌂
-Home
-✝
-Spirit
-🏋
-Habits
-☷
-Journal
-▥
-Progress
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5f3b70">
+<title>Getting It Together</title>
+<style>
+:root{--plum:#684274;--deep:#2b1b31;--lav:#eadcf0;--cream:#fff8f0;--ink:#2a2229;--muted:#766b75;--card:rgba(255,250,246,.92);--line:#dfd0da}
+*{box-sizing:border-box} body{margin:0;font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,#43294f 0,#8c648f 18%,#f4d9d4 39%,#fff8ef 70%);min-height:100vh}
+button,input,textarea{font:inherit}.app{max-width:760px;margin:auto;padding-bottom:110px}.hero{padding:44px 18px 24px;color:white;background:linear-gradient(180deg,rgba(38,23,48,.35),rgba(38,23,48,.04))}
+.brand{font-family:Georgia,serif;font-style:italic;font-size:38px;letter-spacing:-1.5px}.tag{font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:.9;margin-top:5px}
+.days{display:flex;gap:8px;overflow:auto;padding:14px 14px 4px;scrollbar-width:none}.day{min-width:82px;border:1px solid rgba(255,255,255,.7);background:rgba(255,248,241,.82);padding:12px 7px;border-radius:18px;text-align:center;box-shadow:0 7px 22px #563a5030}.day.active{background:linear-gradient(150deg,#815394,#58356b);color:white}.day b{display:block;font-size:14px}.day small{font-size:11px}
+main{padding:10px 14px}.welcome{padding:24px 8px 13px}.eyebrow{letter-spacing:4px;font-size:12px;color:#6d566b}.welcome h1{font-family:Georgia,serif;font-size:52px;margin:5px 0 2px;line-height:.95}.welcome p{margin:8px 0;color:#5e515a}
+.card{background:var(--card);border:1px solid #ffffffa8;border-radius:24px;padding:18px;margin:12px 0;box-shadow:0 12px 35px #4c304a18}.card h2{font-family:Georgia,serif;margin:0 0 12px;font-size:27px}.path{display:flex;gap:6px;overflow:auto;padding:5px 0}.step{min-width:88px;text-align:center}.bubble{width:48px;height:48px;margin:auto;border:2px solid var(--line);border-radius:50%;display:grid;place-items:center;background:#fffaf5;font-size:20px}.step.done .bubble{background:var(--plum);color:white;border-color:var(--plum)}.step span{display:block;font-size:11px;margin-top:6px}.progress{height:8px;background:#ded5dc;border-radius:9px;overflow:hidden;margin:5px 0 14px}.progress i{display:block;height:100%;background:linear-gradient(90deg,#7a4c8b,#ae7fb7);width:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.switch{background:linear-gradient(145deg,#251624,#43263d);color:white}.switch h2{font-size:30px}.switch p{font-family:Georgia,serif;font-style:italic;font-size:19px;line-height:1.35;color:#f4dce9}.btn{width:100%;border:0;border-radius:18px;padding:14px;margin-top:9px;font-weight:750;background:var(--lav);color:#4c2c58}.btn.primary{background:linear-gradient(135deg,#84539a,#643879);color:white}.btn.ghost{background:transparent;border:1px solid #e9d6e7;color:white}.mini p{color:#62555e;font-size:14px}.pill{display:inline-block;padding:7px 10px;border-radius:14px;background:#eaddef;color:#583466;font-size:12px;font-weight:700}
+textarea,input{width:100%;border:1px solid #ddcfd9;border-radius:15px;padding:12px;background:#fffdf9;margin-top:8px}.hidden{display:none!important}
+.modal{position:fixed;inset:0;background:#241625e8;z-index:20;color:white;padding:30px 20px;overflow:auto}.modalbox{max-width:600px;margin:8vh auto}.modal h1{font-family:Georgia,serif;font-size:42px}.timer{font-size:56px;font-weight:800;margin:20px 0}.bottom{position:fixed;bottom:0;left:0;right:0;background:#fffaf4ed;backdrop-filter:blur(18px);border-top:1px solid #eadde4;display:flex;justify-content:space-around;padding:10px 5px calc(10px + env(safe-area-inset-bottom));z-index:10}.nav{border:0;background:none;color:#71666e;font-size:11px}.nav b{display:block;font-size:21px;margin-bottom:2px}.nav.active{color:var(--plum)}
+.toast{position:fixed;left:50%;bottom:95px;transform:translateX(-50%);background:#2d1d31;color:white;padding:10px 16px;border-radius:20px;z-index:30;display:none}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.brand{font-size:34px}.welcome h1{font-size:46px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero"><div class="brand">Getting It Together ♡</div><div class="tag">a calmer, happier, stronger me</div></header>
+<div class="days" id="days"></div>
+<main id="home">
+<section class="welcome"><div class="eyebrow" id="weekday"></div><h1 id="theme"></h1><p id="encouragement"></p></section>
+<section class="card"><h2>Today's Path</h2><div class="progress"><i id="bar"></i></div><div class="path" id="path"></div></section>
+<div class="grid">
+<section class="card switch" id="switchCard"><h2>◷ The Switch · 4:00 PM</h2><p>Your brain knows what usually happens now. We're changing the ending.</p><button class="btn primary" id="goMove">I'M HEADING TO MY WORKOUT →</button><button class="btn ghost" id="craving">I want a drink. Help me through this. →</button></section>
+<section class="card mini"><h2>✝ Spirit</h2><b>Today's Scripture</b><p id="scripture"></p><p id="scripturePrompt"></p><button class="btn" id="reflect">Open reflection →</button><div id="reflectionBox" class="hidden"><textarea id="reflection" placeholder="What stayed with you?"></textarea><button class="btn" id="saveReflection">Save reflection</button></div></section>
+<section class="card mini"><h2>📚 Mind</h2><p>Your book is separate from Bible study. Read because you enjoy learning or disappearing into a good book.</p><input id="book" placeholder="What are you reading?"><input id="minutes" type="number" min="1" placeholder="Minutes read"><button class="btn" id="logReading">Log reading →</button></section>
+<section class="card mini"><h2>🍽 Meal Plan</h2><p id="mealText"></p><span class="pill">Sunday + Wednesday prep</span></section>
+<section class="card mini"><h2>🪷 Self-Care</h2><p id="selfCare"></p><button class="btn" id="newCare">Give me another idea</button></section>
+<section class="card mini"><h2>🏋️ Movement</h2><p id="movement"></p><span class="pill">Listen to your recovery too</span></section>
+</div>
+<section class="card"><h2>Weekly Progress</h2><p>We measure accumulation, not perfection.</p><div id="stats"></div></section>
+<section class="card"><h2>🌱 I'm Becoming…</h2><textarea id="becoming" placeholder="I'm becoming someone who…"></textarea><button class="btn" id="saveBecoming">Save this thought</button></section>
+</main>
+</div>
+<nav class="bottom"><button class="nav active"><b>⌂</b>Home</button><button class="nav"><b>✝</b>Spirit</button><button class="nav"><b>🏋</b>Habits</button><button class="nav"><b>☷</b>Journal</button><button class="nav"><b>▥</b>Progress</button></nav>
+<div class="modal hidden" id="modal"><div class="modalbox"><div class="eyebrow" style="color:#d8bfe0">THE PAUSE</div><h1>Yep. There it is.</h1><p>A craving is real, but it isn't an instruction. You only need to change the next few minutes.</p><div class="card" style="color:#2a2229"><b>Your diversion:</b><p id="diversion"></p></div><div class="timer" id="timer">20:00</div><button class="btn primary" id="startTimer">Start 20-minute pause</button><button class="btn ghost" id="closeModal">Close for now</button></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const plans=[
+{day:"SUN",theme:"Reset",icon:"☀️",move:"Lift — take your time and be methodical.",path:["Lift","Meal prep","Scripture","Weekly reset"],meal:"Prep simple meals through Wednesday. Pick protein + produce + a satisfying carb."},
+{day:"MON",theme:"Lock In",icon:"🔥",move:"Gym class after work.",path:["Treadmill","Scripture","Work","Gym class","Shower + dinner","Read","Bed 10–11"],meal:"Eat from Sunday's prep. Keep the evening easy."},
+{day:"TUE",theme:"Momentum",icon:"🌿",move:"Gym class after work.",path:["Treadmill","Scripture","Work","Gym class","Shower + dinner","Read","Bed 10–11"],meal:"Sunday prep day. One less decision after work."},
+{day:"WED",theme:"Reset",icon:"♥",move:"3-mile treadmill after work, then cook.",path:["Scripture","Work","3-mile cardio","Cook Wed–Fri","Self-care","Read","Rest"],meal:"Midweek cook day: prep Wednesday through Friday."},
+{day:"THU",theme:"Build",icon:"🏋️",move:"Gym class after work.",path:["Scripture","Work","Gym class","Shower + dinner","Read","Wind down"],meal:"Eat from Wednesday's prep."},
+{day:"FRI",theme:"Release",icon:"✨",move:"Lift. Food can be more flexible today.",path:["Scripture","Work","Lift","Enjoy evening"],meal:"Flexible day — enjoy your food without turning it into a test."},
+{day:"SAT",theme:"Free Play",icon:"🎲",move:"Lift whenever you want. Nothing else is scheduled.",path:["Lift if you want","Free play"],meal:"No schedule. Eat, live, and enjoy your Saturday."}
+];
+const scriptures=[
+["Psalm 118:24","What would it look like to receive today rather than rush through it?"],
+["Luke 5:1–11","Notice what Peter does before he fully understands. Where might trust come before certainty?"],
+["Matthew 6:25–34","What are you carrying today that belongs to tomorrow?"],
+["Psalm 46:1–11","Where could you practice stillness instead of control?"],
+["Philippians 4:4–9","What deserves your attention today: fear, or what is true and good?"],
+["Isaiah 40:28–31","Where do you need renewed strength rather than more pressure?"],
+["Psalm 23","What changes when you imagine being guided rather than having to force everything?"]
+];
+const diversions=["Put on your workout clothes. Don't solve the whole evening—just change clothes.","Pour something cold and alcohol-free, put on one song, and move to a different room.","Walk for 10 minutes. You can reassess afterward.","Take a shower and change into comfortable clothes. Change the state of your body first.","Start dinner. Chop one ingredient. Your only job is the next small action.","Get in the car and head toward the gym. You do not have to feel motivated first."];
+const care=["Under-eye patches + an early cozy night.","Face mask while you read.","Teeth whitening tonight.","Overnight hair mask.","Nails or cuticle care.","Long shower + body care. Nothing elaborate."];
+let selected=new Date().getDay(); const key="gitogether-v2"; let data=JSON.parse(localStorage.getItem(key)||'{"done":{},"read":0}');
+function save(){localStorage.setItem(key,JSON.stringify(data))}
+function toast(t){let x=document.getElementById("toast");x.textContent=t;x.style.display="block";setTimeout(()=>x.style.display="none",1800)}
+function render(){
+ const p=plans[selected]; document.getElementById("weekday").textContent=p.day==="SAT"?"SATURDAY":"✦ "+["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"][selected];
+ document.getElementById("theme").textContent=p.icon+" "+p.theme;
+ document.getElementById("encouragement").textContent=p.day==="SAT"?"No agenda. Go live your life.":p.day==="SUN"?"Start the week before Monday asks anything from you.":"Small, consistent choices create the life you want.";
+ document.getElementById("movement").textContent=p.move; document.getElementById("mealText").textContent=p.meal;
+ document.getElementById("scripture").textContent=scriptures[selected][0];document.getElementById("scripturePrompt").textContent=scriptures[selected][1];
+ document.getElementById("switchCard").classList.toggle("hidden",![1,2,3,4].includes(selected));
+ const days=document.getElementById("days");days.innerHTML="";plans.forEach((x,i)=>{let b=document.createElement("button");b.className="day "+(i===selected?"active":"");b.innerHTML=`<div>${x.icon}</div><b>${x.day}</b><small>${x.theme}</small>`;b.onclick=()=>{selected=i;render()};days.appendChild(b)});
+ const path=document.getElementById("path");path.innerHTML="";let done=data.done[selected]||{};p.path.forEach((x,i)=>{let s=document.createElement("button");s.className="step "+(done[i]?"done":"");s.style.border="0";s.style.background="none";s.innerHTML=`<div class="bubble">${done[i]?"✓":i+1}</div><span>${x}</span>`;s.onclick=()=>{done[i]=!done[i];data.done[selected]=done;save();render()};path.appendChild(s)});
+ let count=Object.values(done).filter(Boolean).length;document.getElementById("bar").style.width=(count/p.path.length*100)+"%";
+ document.getElementById("stats").innerHTML=`<b>${count}/${p.path.length}</b> of today's path completed &nbsp;·&nbsp; <b>${data.read||0}</b> reading minutes logged`;
+ document.getElementById("selfCare").textContent=care[(new Date().getDate()+selected)%care.length];
+ document.getElementById("book").value=data.book||"";document.getElementById("becoming").value=data.becoming||"";
+}
+document.getElementById("reflect").onclick=()=>document.getElementById("reflectionBox").classList.toggle("hidden");
+document.getElementById("saveReflection").onclick=()=>{data.reflection=document.getElementById("reflection").value;save();toast("Reflection saved ♡")};
+document.getElementById("logReading").onclick=()=>{data.book=document.getElementById("book").value;data.read=(data.read||0)+(+document.getElementById("minutes").value||0);document.getElementById("minutes").value="";save();render();toast("Reading added 📚")};
+document.getElementById("saveBecoming").onclick=()=>{data.becoming=document.getElementById("becoming").value;save();toast("Saved 🌱")};
+document.getElementById("newCare").onclick=()=>{document.getElementById("selfCare").textContent=care[Math.floor(Math.random()*care.length)]};
+document.getElementById("goMove").onclick=()=>toast("That's the switch. Go move your body. 🏋️");
+document.getElementById("craving").onclick=()=>{document.getElementById("diversion").textContent=diversions[Math.floor(Math.random()*diversions.length)];document.getElementById("modal").classList.remove("hidden")};
+document.getElementById("closeModal").onclick=()=>document.getElementById("modal").classList.add("hidden");
+let interval;document.getElementById("startTimer").onclick=()=>{clearInterval(interval);let n=1200;document.getElementById("startTimer").disabled=true;interval=setInterval(()=>{n--;let m=Math.floor(n/60),s=n%60;document.getElementById("timer").textContent=`${m}:${String(s).padStart(2,"0")}`;if(n<=0){clearInterval(interval);document.getElementById("timer").textContent="You made space.";document.getElementById("startTimer").disabled=false}},1000)};
+render();
+</script>
+</body>
+</html>
